@@ -3,8 +3,8 @@
 %}
 
 %%
-[aeiouAEIOU] { printf("Vowel: %s\n", yytext); }
-[^aeiouAEIOU\n] { printf("Not a vowel: %s\n", yytext); }
+[aeiouAEIOU] { printf("Vowel: %s\n", yytext); }              //[aeiouAEIOU] { printf("Vowel: %s\n", yytext); }
+[^aeiouAEIOU\n] { printf("Not a vowel: %s\n", yytext); }     //.            { printf("Not a Vowel: %s\n", yytext); }
 
 %%
 
